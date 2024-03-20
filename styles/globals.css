@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+body {
+  color: #ffff;
+  font-family: "Raleway", sans-serif;
+  position: relative;
+  color: rgb(44, 58, 75);
+  background-color: #9796f0;
+}
+
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 800px;
+}
+
+a {
+  text-decoration: none;
+  color: #ffff;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  font-weight: 500;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 50em) {
+  body {
+    background-color: #fff;
+  }
+}
+
+@media screen and (min-width: 56.25em) {
+  h2 {
+    font-size: 2rem;
+  }
+}

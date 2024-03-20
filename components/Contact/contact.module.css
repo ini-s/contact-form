@@ -1,0 +1,61 @@
+.contact {
+	padding: 2rem;
+	background-color: #9796f0;
+	border-radius: 6px;
+}
+
+.formTop {
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+.formTop > h2 {
+	color: #ffff;
+	margin-bottom: 1rem;
+}
+
+.formTop h3 {
+	color: #6e48aa;
+	font-weight: 400;
+	font-size: 1.7rem;
+}
+
+.contactFormContainer {
+	display: block;
+	text-align: center;
+}
+
+.formInputContainer {
+	position: relative;
+	margin-bottom: 1.5rem;
+}
+
+.formInput {
+	padding: 0.625rem;
+	border-radius: 0.375rem;
+	border: 2px solid #c2c6ce;
+	font-weight: 500;
+	width: 100%;
+	font-size: 1.2rem;
+}
+
+.formInput:focus {
+	outline-color: #ffdbe1;
+}
+
+.formBtn {
+	background-color: #fbd3e9;
+	color: #ffff;
+	border: none;
+	border-radius: 0.375rem;
+	padding: 0.5rem 1rem;
+	font-weight: 500;
+	font-size: 1rem;
+	margin-bottom: 1rem;
+}
+
+.inputFooterText {
+	color: #ff0000;
+	font-size: 0.875rem;
+}
+
