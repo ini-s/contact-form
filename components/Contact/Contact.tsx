@@ -8,12 +8,12 @@ import { toast } from "react-toastify";
 
 import styles from "./contact.module.css";
 
-const SPREADSHEET_ID = process.env.NEXT_PUBLIC_SPREADSHEET_ID!;
-const SHEET_ID = process.env.NEXT_PUBLIC_SHEET_ID!;
-const GOOGLE_CLIENT_EMAIL = process.env.NEXT_PUBLIC_GOOGLE_CLIENT_EMAIL;
-const GOOGLE_SERVICE_PRIVATE_KEY = process.env.GOOGLE_SERVICE_PRIVATE_KEY!;
-
-console.log(SPREADSHEET_ID);
+const SPREADSHEET_ID = process.env.NEXT_PUBLIC_SPREADSHEET_ID as string;
+const SHEET_ID = process.env.NEXT_PUBLIC_SHEET_ID as string;
+const GOOGLE_CLIENT_EMAIL = process.env
+  .NEXT_PUBLIC_GOOGLE_CLIENT_EMAIL as string;
+const GOOGLE_SERVICE_PRIVATE_KEY = process.env
+  .GOOGLE_SERVICE_PRIVATE_KEY as string;
 
 interface ContactProps {
   name: string;
@@ -28,7 +28,6 @@ const serviceAccountAuth = new JWT({
 });
 
 const doc = new GoogleSpreadsheet(SPREADSHEET_ID, serviceAccountAuth);
-console.log(doc.loadInfo);
 
 const defaultValues = {
   name: "",
@@ -57,7 +56,6 @@ const Contact = () => {
         Message: row.message,
       };
       await sheet.addRow(rowData);
-      console.log("row added successfully");
       toast.success("Message sent successfully");
       setIsLoading(false);
     } catch (e) {
