@@ -132,7 +132,7 @@ const Contact = () => {
               )}
             </div>
             <button className={styles.formBtn} type="submit">
-              {isLoading ? "Loading..." : "Send Message"}
+              {isLoading ? "Submitting..." : "Send Message"}
             </button>
           </form>
         </motion.div>
